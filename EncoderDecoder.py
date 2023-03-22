@@ -5,6 +5,11 @@ def encode(password):
     return encoded_password
 
 
+def decode(encoded_password):
+    decoded_password = ''.join(str((int(digit) - 3) % 10) for digit in encoded_password)
+    print("The encoded password is", encoded_password, ", and the original password is", decoded_password)
+    return decoded_password
+
 
 # Start of the loop
 while True:
