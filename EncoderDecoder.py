@@ -24,6 +24,6 @@ while True:
 
     # This is the decoder option. It decodes the original encoded password.
     elif choice == 2:
-        pass
+        decode(encoded_password)
     elif choice == 3:
         break
